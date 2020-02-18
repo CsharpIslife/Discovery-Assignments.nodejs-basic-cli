@@ -2,7 +2,7 @@
 This sample showcases one way to prompt command-line arguments by using 
 [inquirer](https://www.npmjs.com/package/inquirer) for beginning js programmers.  
 
-To start working on building your own cli tool, the "assignment" branch is published as updated part of the master branch. (So whenever your stuck.. have a quick peek at the master branch)
+To start working on building your own cli tool, the "master" branch is published as 1 behind the "master-solution". (So whenever your stuck.. have a quick peek at the master-solution branch)
 
 **Typically, organizations acquire command-line arguments in a more fashionable manner**, but for now this wil do.
 
