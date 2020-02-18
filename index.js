@@ -1,11 +1,22 @@
+const inputHandler = require('./lib/input-handler');
+const fileHandler = require('./lib/file-handler');
 
-const inputHandler; /*1. TODO: import the inputHandler into the index.js */
-const fileHandler; /*2. TODO: import the fileHandler into the index.js */
+inputHandler.getPrompt().then(args => {
+    if (!args) throw Error('args is empty');
+    handleWritingFile(args);
+})
 
-/*3. TODO: write a method that exposes the prompt results (answers) returned by the inquirer library. */
-/*4. TODO: the logic written to prompt user input cannot be exposed in index.js. */
+const handleWritingFile = async (args) => {
+    try {
+        let successfullyAppendedFile = await fileHandler.writeFile(args.fileName, args.filePath, args.content);
+        console.log(successfullyAppendedFile);
 
+        // notice that writeFile always returns true when no exception occurs
+        if (successfullyAppendedFile) { console.log('your file has successfully been saved'); }
+        else { console.log('Oops something went wrong.. I am not sure if we saved your content correctly') }
 
-const handleWritingFile = (args) => {
-    /*TODO: 5. process the results returned by the inputHandler and write content to a file. */
+    } catch (error) {
+        console.log('something critical went wrong while trying to save your input to a file');
+        console.log(error);
+    }
 }
