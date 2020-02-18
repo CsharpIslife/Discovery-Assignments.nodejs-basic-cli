@@ -1,0 +1,29 @@
+{
+  "name": "discovery.samples.cli-tool-master",
+  "version": "1.0.0",
+  "description": "A basic cli tool that demonstrates the usage of handling cmdline input and reading/writing files",
+  "main": "index.js",
+  "bin": {
+    "my-file-writer": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CsharpIslife/Discovery.Samples.cli-tool.git"
+  },
+  "keywords": [
+    "cli",
+    "inquirer"
+  ],
+  "author": "Almo Daved",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CsharpIslife/Discovery.Samples.cli-tool/issues"
+  },
+  "homepage": "https://github.com/CsharpIslife/Discovery.Samples.cli-tool#readme",
+  "dependencies": {
+    "inquirer": "^7.0.4"
+  }
+}
