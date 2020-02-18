@@ -26,7 +26,7 @@ To start building you should start in the index.js as our starting point.
 As soon as you start you will notice, that there are plenty of commented "TODO's" that will help you on your way. 
 
 To make sense of it all you should know the following:
-* **Use google before** peaking into the master branch
+* **Use google before** peaking into the solution branch
 * **some lines of code are incomplete.** e.g. (the imports in index.js) Hints on what you should google are hidden away in the comments.
 * the 'setup' code for inquiring/prompting the user input should stay in input-handler.js
 * the logic for writing to a file should stay in file-handler.js
